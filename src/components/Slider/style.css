@@ -1,0 +1,31 @@
+.carousel-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-wrapper img{
+  max-width: 100%;
+  width: 100%;
+}
+
+.carousel .control-dots .dot{
+  margin-bottom: 40px;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  background-color: #d7a274;
+  border: none;
+}
+.arrow-pattern {
+  position: absolute;
+  /* bottom: -177px; */
+  top: 97%;
+  z-index: 999;
+  width: 100%;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
