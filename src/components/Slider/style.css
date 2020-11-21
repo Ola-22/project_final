@@ -21,11 +21,37 @@
 .arrow-pattern {
   position: absolute;
   /* bottom: -177px; */
-  top: 97%;
+  top: 97.2%;
   z-index: 999;
   width: 100%;
 }
 
-.carousel .thumbs-wrapper {
+.carousel .thumbs-wrapper, .carousel.carousel-slider .control-arrow, .carousel .carousel-status {
+  
   display: none;
+}
+.content{
+  z-index: 10000;
+  position: absolute;
+  width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    top: 33%;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+    /* padding-bottom: 40px; */
+    left: 15%;
+}
+.title{
+  font-weight: 400;
+  padding: 0 17px;
+  font-size: 24px;
+  display: block;
+  font-family: 'Assistant';
+  margin-bottom: -58px;
+}
+.slide_content{
+  font-size: 78px;
+  margin-bottom: 50px;
 }

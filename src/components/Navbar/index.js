@@ -21,7 +21,7 @@ export function Navbar() {
       <S.NavOne>
         <S.ItemNav>
           <S.Link>
-            <FontAwesomeIcon className="left_font" icon={faMapMarkerAlt} />
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
           </S.Link>
           <S.Link>
             <span>E102 Lorem Ben Street, London, United Kingdom</span>
@@ -30,7 +30,7 @@ export function Navbar() {
       </S.NavOne>
       <S.ItemNav>
         <S.Link>
-          <FontAwesomeIcon className="left_font" icon={faEnvelope} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </S.Link>
         <S.Link>
           <span>info@sitename.com</span>

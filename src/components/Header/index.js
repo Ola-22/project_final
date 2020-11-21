@@ -8,7 +8,7 @@ import { Tested } from "../../pages/Tested";
 import { Contact } from "../../pages/Contact";
 // import { Navbar } from "./components/Navbar";
 import logo from "../../assets/img/logo.png";
-
+import { Button } from "../Button";
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,27 +26,36 @@ export function Header() {
           <S.ListRight>
             <S.List>
               <S.ListLi>
-                <NavLink to="/">Home</NavLink>
-              </S.ListLi>
-              <S.ListLi>
-                <NavLink to="/about" style={{ color: "#4c4c4c" }}>
-                  About
+                <NavLink to="/" className="menu-header">
+                  Home
                 </NavLink>
               </S.ListLi>
               <S.ListLi>
-                <NavLink to="/Rooms" style={{ color: "#4c4c4c" }}>
+                <NavLink to="/about" className="menu-header">
+                  About Us
+                </NavLink>
+              </S.ListLi>
+              <S.ListLi>
+                <NavLink to="/Rooms" className="menu-header">
                   Rooms
                 </NavLink>
               </S.ListLi>
               <S.ListLi>
-                <NavLink to="/Services">Services</NavLink>
+                <NavLink to="/Services" className="menu-header">
+                  Services
+                </NavLink>
               </S.ListLi>
               <S.ListLi>
-                <NavLink to="/Tested">Tested</NavLink>
+                <NavLink to="/Tested" className="menu-header">
+                  RTL Tested
+                </NavLink>
               </S.ListLi>
               <S.ListLi>
-                <NavLink to="/Contact">Contact</NavLink>
+                <NavLink to="/Contact" className="menu-header">
+                  Contact
+                </NavLink>
               </S.ListLi>
+              <S.Linkmenu element>Book now!</S.Linkmenu>
             </S.List>
           </S.ListRight>
         </S.Menu>

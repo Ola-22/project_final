@@ -1,0 +1,14 @@
+.btn{
+  color: #ffffff !important;
+  background-color: #d7a274;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  border-radius: 100px;
+    font-weight: 700 !important;
+    padding: 15px 35px !important;
+    margin-right: 25px !important;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s;
+    cursor: pointer;
+}
