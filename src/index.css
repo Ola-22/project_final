@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.menu-header{
+  color: #4c4c4c;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all .2s;
+  font-family: "Roboto";
+}
+
+
+.menu-header:hover{
+  color:  #d7a274;
+}
+.active{
+  color:  #d7a274;
+}
+.img{
+  max-width: 100%;
+  /* width: 200px; */
+  height: 100px;
+  margin-left: 20px;
+}

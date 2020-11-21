@@ -5,22 +5,26 @@ import img1 from "../../assets/img/slider1.jpg";
 import img2 from "../../assets/img/slider2.jpg";
 import img3 from "../../assets/img/slider3.jpg";
 import "./style.css";
+import SliderContent from "./SliderContent";
 
 export default function CarouselComp() {
   return (
-    <div class="carousel-wrapper">
+    <div className="carousel-wrapper">
       <Carousel infiniteLoop useKeyboardArrows autoPlay>
         <div>
+          <SliderContent />
           <img src={img1} alt="img" />
         </div>
         <div>
+          <SliderContent />
           <img src={img2} alt="img" />
         </div>
         <div>
+          <SliderContent />
           <img src={img3} alt="img" />
         </div>
       </Carousel>
-      <div class="arrow-pattern">
+      <div className="arrow-pattern">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"

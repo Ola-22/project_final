@@ -33,6 +33,9 @@ export const NavTwo = styled.div`
 export const Link = styled.a`
   padding: 5px 11px 5px 0;
   line-height: 17px;
+  &:first-of-type {
+    font-size: 14px;
+  }
 `;
 export const Social = styled.div`
   // float: right;
