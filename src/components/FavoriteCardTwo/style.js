@@ -5,6 +5,7 @@ export const FavoriteMain = styled.div`
     props.primary
       ? "none"
       : " url(https://sktperfectdemo.com/themepack/hotel/wp-content/uploads/2019/09/room-bg.jpg)"};
+  /* background-image: url("https://sktperfectdemo.com/themepack/hotel/wp-content/uploads/2019/09/room-bg.jpg"); */
   padding: 140px 0 150px;
   margin: 0;
   overflow: hidden;
@@ -14,27 +15,49 @@ export const FavoriteMain = styled.div`
   margin: 0 auto;
   padding-bottom: 75px;
   min-width: 380px;
-
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100px;
-    border-radius: 50%;
-    background: #fff;
-    position: relative;
-    top: -193px;
-  }
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100px;
-    border-radius: 30%;
-    background: #fff;
-    position: relative;
-    bottom: -108px;
-  }
+  /* 
+  clip-path: polygon(
+    0 0%,
+    40% 8%,
+    0% 4%,
+    75% 3.3%,
+    80% 3%,
+    100% 0,
+    100% 50%,
+    100% 100%,
+    91% 98%,
+    11% 98%,
+    0 100%,
+    0 55%
+  ); */
+  /* clip-path: polygon(
+    9% 2%,
+    0 0,
+    0 44%,
+    0 100%,
+    20% 98%,
+    51% 98%,
+    91% 98%,
+    100% 100%,
+    100% 0,
+    100% 0,
+    90% 2%,
+    45% 2%
+  ); */
+  /* clip-path: polygon(
+    10% 2%,
+    0 0,
+    0 43%,
+    0 100%,
+    8% 99%,
+    1% 99%,
+    93% 99%,
+    100% 100%,
+    100% 0,
+    100% 0,
+    80% 3%,
+    75% 3%
+  ); */
 `;
 export const FavoriteTitle = styled.h4`
   color: ${(props) => (props.primary ? "#d7a274" : "#fff !important")};
@@ -42,7 +65,6 @@ export const FavoriteTitle = styled.h4`
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  margin-top: ${(props) => (props.titleFav ? "-120px" : "none")};
 `;
 export const TitleRoom = styled.h2`
   @font-face {

@@ -26,7 +26,7 @@ export function Header() {
           <S.ListRight>
             <S.List>
               <S.ListLi>
-                <NavLink to="/" className="menu-header">
+                <NavLink to="/" className="menu-header" exact>
                   Home
                 </NavLink>
               </S.ListLi>
@@ -66,9 +66,7 @@ export function Header() {
           <Route path="/Rooms">
             <Rooms />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+
           <Route path="/Services">
             <Services />
           </Route>
@@ -77,6 +75,9 @@ export function Header() {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>

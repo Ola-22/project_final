@@ -1,9 +1,12 @@
 import React from "react";
+import { DefaultHeader } from "../components/DefaultHeader";
+import { Facilities } from "../components/Facilities";
 
 export const Services = () => {
   return (
     <>
-      <h1>hhh</h1>
+      <DefaultHeader />
+      <Facilities />
     </>
   );
 };
