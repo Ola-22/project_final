@@ -1,9 +1,12 @@
 import React from "react";
+import { DefaultHeader } from "../components/DefaultHeader";
+import { FavoriteCardTwo } from "../components/FavoriteCardTwo";
 
 export const Rooms = () => {
   return (
     <>
-      <h1>hhh</h1>
+      <DefaultHeader />
+      <FavoriteCardTwo />
     </>
   );
 };

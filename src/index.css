@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  outline: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,8 +31,34 @@ code {
   color:  #d7a274;
 }
 .img{
-  max-width: 100%;
-  /* width: 200px; */
-  height: 100px;
-  margin-left: 20px;
+  max-width: 100%; 
+  /* width: 126px; */
+   /* height: 117px;
+  margin-left: 20px; */
+}
+.linkNews{
+  color: #d7a274;
+
+}
+.linkNews:hover{
+  color: white;
+  
+}
+.linkpost{
+  display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Assistant';
+    color: #d7a274;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+}
+
+.linkpost:hover{
+color: white;
+} 
+.titleTest{
+  margin-top: 30px;
 }

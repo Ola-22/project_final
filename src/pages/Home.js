@@ -4,7 +4,9 @@ import Slider from "../components/Slider";
 import { SktHotel } from "../components/SktHotel";
 import { FavoriteCard } from "../components/FavoriteCard";
 import { Facilities } from "../components/Facilities";
-// import { SliderFooter } from "../components/SliderFooter";
+import { Testimonial } from "../components/Testimonial";
+import { LatestNews } from "../components/LatestNews";
+import { SliderFooter } from "../components/SliderFooter";
 
 export const Home = () => {
   return (
@@ -16,7 +18,9 @@ export const Home = () => {
       <SktHotel />
       <FavoriteCard />
       <Facilities />
-      {/* <SliderFooter /> */}
+      <Testimonial />
+      <LatestNews />
+      <SliderFooter />
     </>
   );
 };

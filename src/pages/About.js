@@ -1,8 +1,12 @@
 import React from "react";
+import { DefaultHeader } from "../components/DefaultHeader";
+import { SktHotel } from "../components/SktHotel";
+
 export const About = () => {
   return (
     <>
-      <h1>hhh</h1>
+      <DefaultHeader />
+      <SktHotel />
     </>
   );
 };
