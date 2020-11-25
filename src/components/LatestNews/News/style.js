@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const mainLatest = styled.div`
+export const MainLatest = styled.div`
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@ export const mainLatest = styled.div`
   width: 366.656px;
   height: 280px;
   color: #3a3a3a;
+  position: relative;
   &:hover {
     background-color: #d7a274;
     cursor: pointer;
@@ -15,23 +16,24 @@ export const mainLatest = styled.div`
     transition: 0.2s all ease;
   }
 `;
-export const date = styled.span`
+export const Date = styled.span`
   font-size: 16px;
-  /* line-height: 27.2; */
   font-family: "Assistant", sans-serif;
   font-weight: normal;
-  /* color: #3a3a3a; */
+  z-index: 40;
+  z-index: 2;
   &:hover {
     color: white;
   }
 `;
-export const titleNews = styled.h3`
+export const TitleNews = styled.h3`
+  z-index: 40;
   font-size: 18px;
   margin-top: 10px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Assistant";
-
+  /* border-bottom: 3px solid; */
   &:after {
     background-color: #d7a274;
     content: "";
@@ -45,12 +47,13 @@ export const titleNews = styled.h3`
     background-color: white;
   }
 `;
-export const contentNews = styled.p`
+export const ContentNews = styled.p`
   line-height: 1.7em;
   /* color: #3a3a3a; */
   font-size: 16px;
   font-family: "Lato";
   margin-top: -20px;
+  z-index: 40;
 `;
 // export const linkpost = styled.Link`
 //   display: inline-block;

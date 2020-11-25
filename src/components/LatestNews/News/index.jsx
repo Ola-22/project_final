@@ -6,14 +6,13 @@ export function News(props) {
   const { date, postTitle, content } = props;
 
   return (
-    <S.mainLatest>
-      <S.date>{date}</S.date>
-      <S.titleNews>{postTitle}</S.titleNews>
-      <S.contentNews>{content}</S.contentNews>
-
-      <Link to="#" className="linkpost">
+    <S.MainLatest>
+      <S.Date>{date}</S.Date>
+      <S.TitleNews>{postTitle}</S.TitleNews>
+      <S.ContentNews>{content}</S.ContentNews>
+      <Link to="#" className="LinkPost">
         <span>read more..</span>
       </Link>
-    </S.mainLatest>
+    </S.MainLatest>
   );
 }

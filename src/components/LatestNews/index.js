@@ -8,34 +8,36 @@ import { News } from "./News";
 
 export function LatestNews() {
   return (
-    <F.newsMain>
+    <F.NewsMain>
       <S.FavoriteTitle primary>FROM THE BLOG</S.FavoriteTitle>
-      <S.TitleRoom primary>Latest News</S.TitleRoom>
-      <F.mainPost>
-        <F.imgPost src={post1} alt="img" />
+      <S.TitleRoom primary className="news">
+        Latest News
+      </S.TitleRoom>
+      <F.MainPost>
+        <F.ImgPost src={post1} alt="img" />
         <News
           date="September 23,2019"
           postTitle="Natoque Penatibus Magnis"
           content="
 Donec faucibus dolor sit amet consequati viverra. Aliquam in commodo quam. In sit amet ante sit..."
         />
-        <F.imgPost src={post2} alt="img" />
-      </F.mainPost>
-      <F.mainPost>
+        <F.ImgPost src={post2} alt="img" />
+      </F.MainPost>
+      <F.MainPost>
         <News
           date="September 23,2019"
           postTitle="Elementum Pretium"
           content="
 Donec faucibus dolor sit amet consequati viverra. Aliquam in commodo quam. In sit amet ante sit..."
         />
-        <F.imgPost src={post3} alt="img" />
+        <F.ImgPost src={post3} alt="img" />
         <News
           date="September 23,2019"
           postTitle="Mauris Ultrices Lobortis"
           content="
 Donec faucibus dolor sit amet consequati viverra. Aliquam in commodo quam. In sit amet ante sit..."
         />
-      </F.mainPost>
-    </F.newsMain>
+      </F.MainPost>
+    </F.NewsMain>
   );
 }

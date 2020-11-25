@@ -43,15 +43,21 @@
     /* padding-bottom: 40px; */
     left: 15%;
 }
+@font-face {
+  font-family: "Playfair";
+  src: url("../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
 .title{
+  
   font-weight: 400;
   padding: 0 17px;
   font-size: 24px;
   display: block;
-  font-family: 'Assistant';
+  /* font-family: "Playfair"; */
   margin-bottom: -58px;
 }
 .slide_content{
   font-size: 78px;
   margin-bottom: 50px;
+  font-family: "Playfair";
 }

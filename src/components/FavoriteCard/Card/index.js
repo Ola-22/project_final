@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./style";
 import * as F from "../../Header/style";
+import { Link } from "react-router-dom";
 
 export function Card(props) {
   const { src, title, content } = props;
@@ -11,9 +12,11 @@ export function Card(props) {
       <S.FavoriteTitle>{title}</S.FavoriteTitle>
       <S.FavoriteContent>{content}</S.FavoriteContent>
       <S.FavoriteBtn>
-        <F.Linkmenu ground element>
-          Book now!
-        </F.Linkmenu>
+        <Link to="/Reservation">
+          <F.Linkmenu ground element>
+            Book now!
+          </F.Linkmenu>
+        </Link>
       </S.FavoriteBtn>
     </S.FavoriteCard>
   );

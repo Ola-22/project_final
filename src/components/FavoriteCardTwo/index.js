@@ -1,6 +1,6 @@
 import React from "react";
-import * as S from "./style";
-import { Card } from "./Card";
+import * as S from "../FavoriteCard/style";
+import { Card } from "../FavoriteCard/Card";
 import imgCard from "../../assets/img/room-img1.jpg";
 import imgCard2 from "../../assets/img/room-img2.jpg";
 import imgCard3 from "../../assets/img/room-img3.jpg";
@@ -8,7 +8,9 @@ import imgCard3 from "../../assets/img/room-img3.jpg";
 export function FavoriteCardTwo() {
   return (
     <S.FavoriteMain primary>
-      <S.FavoriteTitle primary>CONSCIOUS HOSPITALITY</S.FavoriteTitle>
+      <S.FavoriteTitle primary className="cardTitle">
+        CONSCIOUS HOSPITALITY
+      </S.FavoriteTitle>
       <S.TitleRoom primary>Our Favorite Room</S.TitleRoom>
       <S.RoomMain>
         <Card

@@ -3,18 +3,19 @@ import styled from "styled-components";
 export const Menu = styled.div`
   @font-face {
     font-family: "Roboto";
-    src: url("../RobotoCondensed-BoldItalic.ttf");
+    src: url("../../RobotoCondensed-BoldItalic.ttf");
   }
   position: absolute;
   width: 86%;
   z-index: 1000;
   margin-left: 7%;
   padding: 25px 0;
+  transition: all 0.4s ease-out;
   background: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: space-between;
   line-height: 28px;
-  font-family: "Roboto";
+  font-family: "Assistant";
 `;
 export const Logo = styled.div`
   float: left;
