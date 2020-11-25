@@ -56,10 +56,10 @@ export function Navbar() {
           <S.Fontawesome href="http://google.com">
             <FontAwesomeIcon className="fontawsome" icon={faGooglePlusG} />
           </S.Fontawesome>
-          <S.Fontawesome href="http://facebook.com">
+          <S.Fontawesome href="http://linkedin.com">
             <FontAwesomeIcon className="fontawsome" icon={faLinkedinIn} />
           </S.Fontawesome>
-          <S.Fontawesome href="http://facebook.com">
+          <S.Fontawesome href="http://pinterest.com">
             <FontAwesomeIcon className="fontawsome" icon={faPinterest} />
           </S.Fontawesome>
         </S.Social>

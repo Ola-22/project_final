@@ -1,1 +1,5 @@
-https://www.figma.com/file/VUQ7vl8fe6MFJNbShb857j/Sign-In-(Community)-(Copy)?node-id=7%3A2167
+https://digital-flowers.github.io/react-animated-css.html
+
+https://codepen.io/sedlukha/pen/WPeemb
+
+https://reactjsexample.com/react-component-to-show-or-hide-elements-with-animations/

@@ -1,8 +1,9 @@
 import React from "react";
 import * as S from "./style";
 import * as F from "../../Header/style";
+import { Link } from "react-router-dom";
 
-export function LeftSide(classes) {
+export function LeftSide() {
   return (
     <>
       <S.SktTitle>Welcome to Our</S.SktTitle>
@@ -25,7 +26,9 @@ export function LeftSide(classes) {
         <br />
         lacus nibh, aliquet vitae aliquet ut, elementum.
       </S.SktContent>
-      <F.Linkmenu element>Book now!</F.Linkmenu>
+      <Link to="/Reservation">
+        <F.Linkmenu element>Book now!</F.Linkmenu>
+      </Link>
     </>
   );
 }

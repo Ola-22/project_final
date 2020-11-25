@@ -5,14 +5,15 @@ export const FavoriteMain = styled.div`
     props.primary
       ? "none"
       : " url(https://sktperfectdemo.com/themepack/hotel/wp-content/uploads/2019/09/room-bg.jpg)"};
-  padding: 140px 0 150px;
+  padding: ${(props) => (props.primary ? "-40px" : "140px 0 150px")};
   margin: 0;
   overflow: hidden;
   position: relative;
   border-radius: -50px 0 -50px;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 75px;
+  padding-bottom: ${(props) => (props.primary ? "-70px" : "75px")};
+
   min-width: 380px;
 
   &:before {
@@ -37,7 +38,7 @@ export const FavoriteMain = styled.div`
   }
 `;
 export const FavoriteTitle = styled.h4`
-  color: ${(props) => (props.primary ? "#d7a274" : "#fff !important")};
+  color: ${(props) => (props.primary ? "#d7a274" : "#fff")};
   font-family: "Assistant";
   font-size: 16px;
   font-weight: 600;

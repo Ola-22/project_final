@@ -7,6 +7,7 @@ import { Facilities } from "../components/Facilities";
 import { Testimonial } from "../components/Testimonial";
 import { LatestNews } from "../components/LatestNews";
 import { SliderFooter } from "../components/SliderFooter";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
       <Testimonial />
       <LatestNews />
       <SliderFooter />
+      <Footer />
     </>
   );
 };

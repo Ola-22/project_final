@@ -12,7 +12,7 @@ export const SKTHotel = styled.div`
 export const LeftSkt = styled.div`
   position: relative;
   animation-name: example;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   width: 46%;
   @keyframes example {
     0% {

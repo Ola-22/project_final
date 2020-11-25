@@ -6,6 +6,8 @@ import { Rooms } from "../../pages/Rooms";
 import { Services } from "../../pages/Services";
 import { Tested } from "../../pages/Tested";
 import { Contact } from "../../pages/Contact";
+import { Reservation } from "../../pages/Reservation";
+
 // import { Navbar } from "./components/Navbar";
 import logo from "../../assets/img/logo.png";
 import { Button } from "../Button";
@@ -14,6 +16,7 @@ import {
   Switch,
   Route,
   NavLink,
+  Link,
 } from "react-router-dom";
 export function Header() {
   return (
@@ -55,7 +58,9 @@ export function Header() {
                   Contact
                 </NavLink>
               </S.ListLi>
-              <S.Linkmenu element>Book now!</S.Linkmenu>
+              <Link to="/Reservation">
+                <S.Linkmenu element>Book now!</S.Linkmenu>
+              </Link>
             </S.List>
           </S.ListRight>
         </S.Menu>
@@ -75,6 +80,9 @@ export function Header() {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/Reservation">
+            <Reservation />
           </Route>
           <Route path="/">
             <Home />

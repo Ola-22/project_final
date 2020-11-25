@@ -9,6 +9,7 @@ export function SktHotel() {
       <S.LeftSkt>
         <LeftSide />
       </S.LeftSkt>
+
       <S.RightSkt>
         <RightSide />
       </S.RightSkt>
