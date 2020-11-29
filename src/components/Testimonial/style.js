@@ -10,6 +10,9 @@ export const slideMain = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 480px;
   z-index: 2;
+  @media (min-width: 160px) and (max-width: 600px) {
+    background-size: 100% 240px;
+  }
 
   &:before {
     content: "";
@@ -29,7 +32,8 @@ export const slideMain = styled.div`
     border-radius: 30%;
     background: #f8f8f8;
     position: relative;
-    bottom: 160px;
+    bottom: 120px;
     z-index: 1;
+    /* top: -20px; */
   }
 `;

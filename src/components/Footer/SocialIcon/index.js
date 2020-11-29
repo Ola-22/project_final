@@ -1,38 +1,24 @@
-// import React from "react";
-// import * as S from "./style";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faGooglePlusG,
-  faTwitter,
-  faInstagram,
-  faYoutube,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
-// import "./style";
-
 export function SocialIcon() {
   return (
     <div>
-      {/* <Link to="http://www.facebook.com" className="facebook" /> */}
-      <a className="icon" href="http://www.facebook.com">
-        <FontAwesomeIcon icon={faFacebookF} className="social" />
+      <a href="http://www.facebook.com" className="social">
+        <i className="fa fa-facebook  icon" aria-hidden="true" />
       </a>
-      <a className="icon" href="https://www.google.com/">
-        <FontAwesomeIcon icon={faGooglePlusG} className="social" />
+      <a href="https://www.google.com" className="social">
+        <i className="fa fa-google-plus  icon" aria-hidden="true" />
       </a>
-      <a className="icon" href="https://www.twitter.com/">
-        <FontAwesomeIcon icon={faTwitter} className="social" />
+      {/* <i class="fab fa-google-plus-g"></i> */}
+      <a href="https://www.twitter.com" className="social">
+        <i className="fa fa-twitter icon" aria-hidden="true" />
       </a>
-      <a className="icon" href="https://www.instagram.com/">
-        <FontAwesomeIcon icon={faInstagram} className="social" />
+      <a href="https://www.instagram.com" className="social">
+        <i className="fa fa-instagram icon" aria-hidden="true" />
       </a>
-      <a className="icon" href="https://www.youtube.com/">
-        <FontAwesomeIcon icon={faYoutube} className="social" />
+      <a href="https://www.youtube.com" className="social">
+        <i className="fa fa-youtube icon" aria-hidden="true" />
       </a>
-      <a className="icon" href="https://www.linkedin.com/">
-        <FontAwesomeIcon icon={faLinkedinIn} className="social" />
+      <a href="https://www.linkedin.com" className="social">
+        <i className="fa fa-linkedin icon" aria-hidden="true" />
       </a>
     </div>
   );

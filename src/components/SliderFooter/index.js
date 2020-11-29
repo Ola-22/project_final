@@ -15,9 +15,28 @@ export function SliderFooter() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+    ],
   };
   return (
-    <div className="mainslider">
+    <div className="MainSlider">
       <Slider {...settings}>
         <div>
           <img src={partner1} alt="img" />

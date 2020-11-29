@@ -8,7 +8,7 @@ export function Card(props) {
 
   return (
     <S.FavoriteCard>
-      <img src={src} alt="img" />
+      <S.CardImg src={src} alt="img" />
       <S.FavoriteTitle>{title}</S.FavoriteTitle>
       <S.FavoriteContent>{content}</S.FavoriteContent>
       <S.FavoriteBtn>

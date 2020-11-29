@@ -30,7 +30,7 @@ export const CopyRight = styled.div`
   margin-left: 7.4%;
   border-radius: 8px;
   margin-bottom: 80px;
-  margin-top: 40px;
+  margin-top: 70px;
   border: solid 2px #353535;
   /* font-family: "Assistant"; */
 `;

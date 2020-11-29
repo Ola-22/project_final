@@ -20,6 +20,15 @@ export const ItemNav = styled.div`
   margin-left: 30px;
   &:first-child {
     margin-left: 90px;
+    @media (min-width: 160px) and (max-width: 600px) {
+      margin-left: 60px;
+    }
+  }
+  &:nth-of-type(2) {
+    /* margin-left: 90px; */
+    @media (min-width: 160px) and (max-width: 600px) {
+      margin-left: 75px;
+    }
   }
 `;
 export const NavOne = styled.div`
@@ -40,6 +49,12 @@ export const Link = styled.a`
 export const Social = styled.div`
   // float: right;
   position: relative;
+
+  @media (min-width: 160px) and (max-width: 600px) {
+    display: block;
+    margin-left: -140px;
+    margin-top: 20px;
+  }
 `;
 
 export const Fontawesome = styled.a`

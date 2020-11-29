@@ -7,16 +7,16 @@ export const FavoriteMain = styled.div`
       : " url(https://sktperfectdemo.com/themepack/hotel/wp-content/uploads/2019/09/room-bg.jpg)"};
   padding: ${(props) => (props.primary ? "-40px" : "140px 0 150px")};
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   border-radius: -50px 0 -50px;
   height: auto;
   margin: 0 auto;
   padding-bottom: ${(props) => (props.primary ? "-70px" : "75px")};
-
   min-width: 380px;
 
   &:before {
+    /* content: ${(props) => (props.primary ? "none" : "")}; */
     content: "";
     display: inline-block;
     width: 100%;
@@ -25,6 +25,7 @@ export const FavoriteMain = styled.div`
     background: #fff;
     position: relative;
     top: -193px;
+    display: ${(props) => (props.primary ? "none" : "")};
   }
   &:after {
     content: "";
@@ -43,7 +44,7 @@ export const FavoriteTitle = styled.h4`
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  margin-top: ${(props) => (props.titleFav ? "-120px" : "none")};
+  margin-top: ${(props) => (props.titleFav ? "-120px" : "20px")};
 `;
 export const TitleRoom = styled.h2`
   @font-face {
@@ -63,4 +64,7 @@ export const RoomMain = styled.div`
   /* justify-content: flex-start; */
   margin-left: 7%;
   margin-right: 15%;
+  @media (min-width: 160px) and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;

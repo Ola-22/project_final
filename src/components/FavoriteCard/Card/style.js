@@ -4,10 +4,18 @@ export const FavoriteCard = styled.div`
   background-color: white;
   font-family: "Assistant";
   margin: 20px 0 0 20px;
-  /* width: 353.328px; */
+  width: 370px;
   height: 550px;
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 425px;
+    margin: 20px 0 0 0px;
+  }
 `;
-
+export const CardImg = styled.img`
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+  }
+`;
 export const FavoriteBtn = styled.a`
   margin-left: 30px;
   margin-bottom: 20px;
@@ -18,6 +26,7 @@ export const FavoriteTitle = styled.h3`
   font-weight: 700;
   margin-left: 30px;
   font-family: "Assistant";
+  margin-top: 20px;
 `;
 export const FavoriteContent = styled.p`
   color: rgba(128, 139, 152);

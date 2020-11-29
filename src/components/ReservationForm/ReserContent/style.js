@@ -6,6 +6,10 @@ export const TitleRes = styled.h2`
   font-size: 38px;
   font-weight: 700;
   margin-left: 34%;
+  @media only screen and (max-width: 600px) {
+    margin-left: 40px;
+    width: 90%;
+  }
   &:after {
     background-color: #d7a274;
     content: "";
@@ -30,4 +34,9 @@ export const ContentRes = styled.p`
   line-height: 1.7;
   margin-left: 19%;
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    margin-left: 5px;
+    width: 100%;
+    font-size: 14px;
+  }
 `;
