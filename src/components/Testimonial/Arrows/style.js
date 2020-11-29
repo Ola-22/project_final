@@ -16,6 +16,9 @@ export const prevQuote = styled.div`
   z-index: 100;
   position: absolute;
   cursor: pointer;
+  @media (min-width: 160px) and (max-width: 600px) {
+    display: none;
+  }
 `;
 export const nextQuote = styled.div`
   text-align: center;
@@ -31,4 +34,7 @@ export const nextQuote = styled.div`
   top: 61%;
   z-index: 10000;
   position: absolute;
+  @media (min-width: 160px) and (max-width: 600px) {
+    display: none;
+  }
 `;

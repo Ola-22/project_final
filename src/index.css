@@ -10,6 +10,11 @@ body {
 *{
   outline: none;
 }
+@media (min-width: 160px) and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -70,24 +75,31 @@ z-index: 200;
   margin-top: 30px;
 }
 .mainLink{
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  margin-top: 40px;
 }
 .footer{
   color: white;
   text-decoration: none;
-  margin: 0 28px 10px 0;
+  margin: 0 40px 10px 0;
 }
 .footer:hover{
   color: #d7a274;
 }
 .social{
   background-color: black;
-  padding: 15px 15px;
+  padding: 12px 18px;
   cursor: pointer;
   font-size: 18px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 40px;
+}
+.social:nth-child(2){
+  padding: 12px;
+}
+.social:nth-child(3),.social:nth-child(4),.social:nth-child(5), .social:last-child{
+  padding: 12px 16px;
 }
 .social:hover{
   background-color:  #d7a274;
@@ -111,8 +123,12 @@ z-index: 200;
   background: rgba(0,0,0,.03);
   margin-top: 10px;
 }
-a{
+a, a:hover{
   text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: white;
 }
 .inputVal{
   margin-left: 27.5%;
@@ -123,16 +139,22 @@ a{
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.05);
   margin-top: 10px;
-  height: 30px;
+  height: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .inputVal{
+    width: 96%;
+    margin-left: 2%;
+  }
 }
 .inputContact{
   padding: 12px;
   background: rgba(0, 0, 0, 0.03);
-  width: 82%;
+  width: 84.5%;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.05);
   margin-top: 10px;
-  height: 30px;
+  height: 50px;
 }
 
 label{
@@ -142,3 +164,64 @@ label{
 .check{
   margin-left: 27.5%;
 }
+
+@media only screen and (max-width: 600px) {
+  .check{
+  
+    margin-left: 2%;
+  }
+}
+.fa-bars {
+  display: none;
+  color: #222;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+.fa-bars {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+}
+@media only screen and (max-width: 600px) {
+
+.collapsed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  /* left: 20%; */
+  justify-content: space-between;
+  /* height: 700px; */
+  flex-wrap: wrap;
+
+  overflow: hidden;
+  max-height: 0;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}}
+@media only screen and (max-width: 600px) {
+
+  .is-expanded {
+    overflow: hidden;
+    max-height: 200px; /* approximate max height */
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+}
+

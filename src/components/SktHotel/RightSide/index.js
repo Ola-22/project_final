@@ -1,6 +1,7 @@
 import React from "react";
 import imgRight from "../../../assets/img/right.png";
 import { Animated } from "react-animated-css";
+import * as S from "./style";
 
 export function RightSide() {
   return (
@@ -13,7 +14,7 @@ export function RightSide() {
         animationOutDuration={1000}
         isVisible={true}
       >
-        <img src={imgRight} alt="imgHotel" />
+        <S.RightImg src={imgRight} alt="imgHotel" />
       </Animated>
     </>
   );

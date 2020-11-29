@@ -2,10 +2,17 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+ 
 }
+
 .carousel-wrapper img{
   max-width: 100%;
   width: 100%;
+}
+@media (min-width: 160px) and (max-width: 600px) {
+  .carousel-wrapper img{
+    height: 400px;
+  }
 }
 
 .carousel .control-dots .dot{
@@ -24,6 +31,12 @@
   top: 97.2%;
   z-index: 999;
   width: 100%;
+
+}
+@media (min-width: 160px) and (max-width: 600px) {
+  .arrow-pattern{
+    top: 94%;
+  }
 }
 
 .carousel .thumbs-wrapper, .carousel.carousel-slider .control-arrow, .carousel .carousel-status {
@@ -54,10 +67,15 @@
   font-size: 24px;
   display: block;
   /* font-family: "Playfair"; */
-  margin-bottom: -58px;
+  /* margin-bottom: -58px; */
 }
 .slide_content{
   font-size: 78px;
   margin-bottom: 50px;
   font-family: "Playfair";
+}
+@media (min-width: 160px) and (max-width: 600px) {
+  .slide_content{
+    font-size: 50px;
+  }
 }

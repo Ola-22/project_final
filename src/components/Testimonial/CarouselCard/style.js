@@ -14,6 +14,11 @@ export const CarouselCard = styled.div`
   margin-left: 14%;
   border-radius: 5px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.24);
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+    height: 420px;
+  }
 `;
 export const fontquote = styled.div`
   color: #d7a274;
@@ -29,6 +34,10 @@ export const content = styled.div`
   line-height: 32px;
   width: 75%;
   margin-left: 12%;
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 export const authorMain = styled.div`
   display: flex;
@@ -54,5 +63,8 @@ export const TestimonialUser = styled.h4`
 export const category = styled.div`
   color: #d7a274;
   margin-left: 20px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
+`;
+export const Author = styled.div`
+  margin-top: 12px;
 `;

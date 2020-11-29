@@ -16,6 +16,13 @@ export const Menu = styled.div`
   justify-content: space-between;
   line-height: 28px;
   font-family: "Assistant";
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+    /* display: block; */
+    padding: 15px;
+    /* height: 600px; */
+  }
 `;
 export const Logo = styled.div`
   float: left;
@@ -30,6 +37,11 @@ export const List = styled.ul`
   margin: 0;
   padding: 0;
   color: #4c4c4c;
+  @media (min-width: 160px) and (max-width: 600px) {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const ListLi = styled.li`
   list-style-type: none;
@@ -43,6 +55,14 @@ export const ListLi = styled.li`
   font-weight: 400;
   font-size: 16px;
   font-family: "Roboto";
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+    margin-left: 80%;
+    display: block;
+    background-color: whitesmoke;
+    color: #282828;
+    /* padding: 10px 20px 15px; */
+  }
 `;
 
 export const Linkmenu = styled.a`

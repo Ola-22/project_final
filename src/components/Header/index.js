@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 import { Home } from "../../pages/Home";
 import { About } from "../../pages/About";
@@ -7,10 +7,7 @@ import { Services } from "../../pages/Services";
 import { Tested } from "../../pages/Tested";
 import { Contact } from "../../pages/Contact";
 import { Reservation } from "../../pages/Reservation";
-
-// import { Navbar } from "./components/Navbar";
 import logo from "../../assets/img/logo.png";
-import { Button } from "../Button";
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,7 +15,9 @@ import {
   NavLink,
   Link,
 } from "react-router-dom";
+
 export function Header() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="head">
       <Router>
@@ -26,7 +25,14 @@ export function Header() {
           <S.Logo>
             <img src={logo} alt="img" />
           </S.Logo>
-          <S.ListRight>
+          <i
+            className="fa fa-bars"
+            aria-hidden="true"
+            onClick={() => {
+              setOpen(!isOpen);
+            }}
+          />
+          <S.ListRight className={`collapsed ${isOpen ? "is-expanded" : ""}`}>
             <S.List>
               <S.ListLi>
                 <NavLink to="/" className="menu-header" exact>

@@ -5,8 +5,8 @@ export const MainLatest = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0 40px;
-  width: 366.656px;
-  height: 280px;
+  width: auto;
+  height: auto;
   color: #3a3a3a;
   position: relative;
   &:hover {
@@ -14,6 +14,14 @@ export const MainLatest = styled.div`
     cursor: pointer;
     color: white;
     transition: 0.2s all ease;
+  }
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 92.5%;
+  }
+  :not(:first-of-type) {
+    @media (min-width: 160px) and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 `;
 export const Date = styled.span`
@@ -55,10 +63,3 @@ export const ContentNews = styled.p`
   margin-top: -20px;
   z-index: 40;
 `;
-// export const linkpost = styled.Link`
-//   display: inline-block;
-//   font-size: 14px;
-//   font-weight: 600;
-//   font-family: "Assistant", sans-serif;
-//   color: #d7a274;
-// `;
