@@ -4,7 +4,7 @@ export function Label(props) {
   const { LabelTxt, forLabel, className } = props;
   return (
     <div className="input">
-      <label className={className} for={forLabel}>
+      <label className={className} htmlFor={forLabel}>
         {LabelTxt}
       </label>
     </div>

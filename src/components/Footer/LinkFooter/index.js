@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function LinkFooter() {
   return (
     <div className="mainLink">
-      <Link to="/" className="footer" exact>
+      <Link to="/" className="footer">
         Home
       </Link>
       <Link to="/about" className="footer">

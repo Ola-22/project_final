@@ -14,9 +14,17 @@ export const SKTHotel = styled.div`
 `;
 export const LeftSkt = styled.div`
   position: relative;
-  animation-name: example;
-  animation-duration: 0.5s;
   width: 46%;
+  @media (min-width: 160px) and (max-width: 600px) {
+    width: 100%;
+  }
+  /* animation-name: example;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out; */
+  /* animation: example 1s ease-in-out; */
+  /* animation-delay: 1s;
+  width: 46%;
+
   @media (min-width: 160px) and (max-width: 600px) {
     width: 100%;
   }
@@ -33,14 +41,17 @@ export const LeftSkt = styled.div`
       right: 0px;
       top: 0px;
     }
-  }
+  } */
 `;
 export const RightSkt = styled.div`
   width: 40%;
   margin-right: 40px;
   position: relative;
-  animation-name: right;
-  animation-duration: 2s;
+  /* animation-name: right;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out; */
+  /* animation: right 1s ease-in-out;
+  animation-delay: 1s; */
   @media (min-width: 160px) and (max-width: 600px) {
     width: 100%;
     margin-top: 30px;
@@ -48,7 +59,7 @@ export const RightSkt = styled.div`
     display: flex;
     justify-content: flex-end;
   }
-  @keyframes right {
+  /* @keyframes right {
     0% {
       left: 100%;
       top: 0px;
@@ -61,5 +72,5 @@ export const RightSkt = styled.div`
       left: 0px;
       top: 0px;
     }
-  }
+  } */
 `;

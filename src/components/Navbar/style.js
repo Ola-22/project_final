@@ -1,10 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Navbar = styled.nav`
-  @font-face {
-    font-family: Assistant;
-    src: url(../../Assistant-Regular.ttf);
-  }
   width: 100%;
   display: flex;
   font-size: 16px;
@@ -39,7 +36,7 @@ export const NavTwo = styled.div`
   margin-left: 250px;
 `;
 
-export const Link = styled.a`
+export const NavbarLink = styled.a`
   padding: 5px 11px 5px 0;
   line-height: 17px;
   &:first-of-type {
