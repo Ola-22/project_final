@@ -223,3 +223,9 @@ label{
   margin-left: 30px;
   
 }
+
+.MuiMobileStepper-dots {
+  display: none;
+  flex-direction: row;
+  visibility: hidden;
+}

@@ -149,7 +149,7 @@ export function SwipeableTextMobileStepper(props) {
           style={{ padding: 0 }}
           steps={maxSteps}
           position="static"
-          variant="text"
+          // variant="none"
           activeStep={activeStep}
           nextButton={
             <Button
