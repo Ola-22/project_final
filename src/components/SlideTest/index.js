@@ -150,6 +150,7 @@ export function SwipeableTextMobileStepper(props) {
           steps={maxSteps}
           position="static"
           // variant="none"
+          variant="text"
           activeStep={activeStep}
           nextButton={
             <Button
