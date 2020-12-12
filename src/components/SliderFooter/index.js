@@ -7,6 +7,7 @@ import partner4 from "../../assets/img/partner4.jpg";
 import partner5 from "../../assets/img/partner5.jpg";
 import partner6 from "../../assets/img/partner6.jpg";
 import "./style.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export function SliderFooter() {
   const settings = {
@@ -36,27 +37,36 @@ export function SliderFooter() {
     ],
   };
   return (
-    <div className="MainSlider">
-      <Slider {...settings}>
-        <div>
-          <img src={partner1} alt="img" />
-        </div>
-        <div>
-          <img src={partner2} alt="img" />
-        </div>
-        <div>
-          <img src={partner3} alt="img" />
-        </div>
-        <div>
-          <img src={partner4} alt="img" />
-        </div>
-        <div>
-          <img src={partner5} alt="img" />
-        </div>
-        <div>
-          <img src={partner6} alt="img" />
-        </div>
-      </Slider>
-    </div>
+    <ScrollAnimation
+      animateIn="zoomInDown
+
+      "
+      // animateOut="backInDown"
+      animateOnce={true}
+      delay={500}
+    >
+      <div className="MainSlider">
+        <Slider {...settings}>
+          <div>
+            <img src={partner1} alt="img" />
+          </div>
+          <div>
+            <img src={partner2} alt="img" />
+          </div>
+          <div>
+            <img src={partner3} alt="img" />
+          </div>
+          <div>
+            <img src={partner4} alt="img" />
+          </div>
+          <div>
+            <img src={partner5} alt="img" />
+          </div>
+          <div>
+            <img src={partner6} alt="img" />
+          </div>
+        </Slider>
+      </div>
+    </ScrollAnimation>
   );
 }

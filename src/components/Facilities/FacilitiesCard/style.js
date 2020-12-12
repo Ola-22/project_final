@@ -36,16 +36,11 @@ export const CardTitle = styled.h3`
   margin-left: 15px;
 `;
 export const CardContent = styled.p`
-  @font-face {
-    font-family: "Lato";
-    src: url("../../../../../assets/fonts/Lato-Regular.ttf");
-  }
   display: block;
   margin-left: 15px;
   color: #7d7c7c;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  /* margin-top: -20px; */
   margin-right: 10px;
 `;

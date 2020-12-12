@@ -20,29 +20,29 @@ export function Navbar() {
     <S.Navbar>
       <S.NavOne>
         <S.ItemNav>
-          <S.Link>
+          <S.NavbarLink>
             <FontAwesomeIcon icon={faMapMarkerAlt} />
-          </S.Link>
-          <S.Link>
+          </S.NavbarLink>
+          <S.NavbarLink>
             <span>E102 Lorem Ben Street, London, United Kingdom</span>
-          </S.Link>
+          </S.NavbarLink>
         </S.ItemNav>
       </S.NavOne>
       <S.ItemNav>
-        <S.Link>
+        <S.NavbarLink>
           <FontAwesomeIcon icon={faEnvelope} />
-        </S.Link>
-        <S.Link>
+        </S.NavbarLink>
+        <S.NavbarLink>
           <span>info@sitename.com</span>
-        </S.Link>
+        </S.NavbarLink>
       </S.ItemNav>
       <S.ItemNav>
-        <S.Link>
+        <S.NavbarLink>
           <FontAwesomeIcon className="left_font" icon={faPhoneAlt} />
-        </S.Link>
-        <S.Link>
+        </S.NavbarLink>
+        <S.NavbarLink>
           <span>+12 8888 6666</span>
-        </S.Link>
+        </S.NavbarLink>
       </S.ItemNav>
 
       <S.NavTwo>

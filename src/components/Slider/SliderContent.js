@@ -6,9 +6,9 @@ export default function Slider() {
     <div className="content">
       <h1 className="title">WELCOME TO</h1>
       <p className="slide_content">Luxury Hotel</p>
-      <S.Linkmenu primary colorBtn btnmargin>
+      <S.MenuBook primary colorBtn btnmargin>
         Book now!
-      </S.Linkmenu>
+      </S.MenuBook>
     </div>
   );
 }

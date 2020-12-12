@@ -1,21 +1,19 @@
 import React from "react";
 import imgRight from "../../../assets/img/right.png";
-import { Animated } from "react-animated-css";
 import * as S from "./style";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export function RightSide() {
   return (
     <>
-      {/* <img src={imgRight} alt="imgHotel" /> */}
-      <Animated
-        animationIn="fadeInLeft"
-        animationOut="bounce"
-        animationInDuration={1000}
-        animationOutDuration={1000}
-        isVisible={true}
+      <ScrollAnimation
+        animateIn="bounceInRight"
+        // animateOut="bounceOutLeft"
+        animateOnce={true}
+        delay={500}
       >
         <S.RightImg src={imgRight} alt="imgHotel" />
-      </Animated>
+      </ScrollAnimation>
     </>
   );
 }

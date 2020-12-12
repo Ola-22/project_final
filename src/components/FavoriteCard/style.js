@@ -37,6 +37,18 @@ export const FavoriteMain = styled.div`
     position: relative;
     bottom: -108px;
   }
+  @media (min-width: 160px) and (max-width: 600px) {
+    &:after {
+      content: "";
+      display: none;
+      width: 100%;
+      height: 100px;
+      border-radius: 30%;
+      background: #fff;
+      position: relative;
+      bottom: -108px;
+    }
+  }
 `;
 export const FavoriteTitle = styled.h4`
   color: ${(props) => (props.primary ? "#d7a274" : "#fff")};
@@ -47,10 +59,10 @@ export const FavoriteTitle = styled.h4`
   margin-top: ${(props) => (props.titleFav ? "-120px" : "20px")};
 `;
 export const TitleRoom = styled.h2`
-  @font-face {
+  /* @font-face {
     font-family: "Playfair";
     src: url("../../../../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
-  }
+  } */
   color: ${(props) => (props.primary ? "#222" : "#fff !important")};
   font-family: "Playfair";
   font-size: 42px;
@@ -59,9 +71,7 @@ export const TitleRoom = styled.h2`
   text-align: center;
 `;
 export const RoomMain = styled.div`
-  /* width: 30%; */
   display: flex;
-  /* justify-content: flex-start; */
   margin-left: 7%;
   margin-right: 15%;
   @media (min-width: 160px) and (max-width: 600px) {

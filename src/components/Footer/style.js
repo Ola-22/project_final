@@ -21,10 +21,6 @@ export const SktHotel = styled.h2`
 `;
 
 export const CopyRight = styled.div`
-  /* @font-face {
-    font-family: "Assistant";
-    src: url("../../../assets/fonts/Assistant-VariableFont_wght.ttf");
-  } */
   padding: 30px 10px;
   width: 83%;
   margin-left: 7.4%;
@@ -32,5 +28,4 @@ export const CopyRight = styled.div`
   margin-bottom: 80px;
   margin-top: 70px;
   border: solid 2px #353535;
-  /* font-family: "Assistant"; */
 `;
