@@ -59,7 +59,7 @@ export function Header() {
                 </NavLink>
               </S.ListLi>
               <Link to="/Reservation">
-                <S.Linkmenu element>Book now!</S.Linkmenu>
+                <S.LinkMenu element>Book now!</S.LinkMenu>
               </Link>
             </S.List>
           </S.ListRight>

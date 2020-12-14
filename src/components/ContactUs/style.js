@@ -25,3 +25,11 @@ export const SubmitVal = styled.input`
   margin-bottom: 40px;
   margin-left: ${(props) => (props.primary ? "48%" : "0")};
 `;
+export const ErrorVal = styled.div`
+  color: #dc3232;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: ${(props) => (props.primary ? "1%" : "3%")};
+  margin-top: ${(props) => (props.primary ? "-20px" : "0")};
+  margin-left: ${(props) => (props.primary ? "27.5%" : "0")};
+`;

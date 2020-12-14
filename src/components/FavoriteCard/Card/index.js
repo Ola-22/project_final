@@ -13,9 +13,9 @@ export function Card(props) {
       <S.FavoriteContent>{content}</S.FavoriteContent>
       <S.FavoriteBtn>
         <Link to="/Reservation">
-          <F.Linkmenu ground element>
+          <F.LinkMenu ground element>
             Book now!
-          </F.Linkmenu>
+          </F.LinkMenu>
         </Link>
       </S.FavoriteBtn>
     </S.FavoriteCard>

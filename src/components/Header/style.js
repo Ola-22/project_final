@@ -45,7 +45,7 @@ export const ListLi = styled.li`
   font-family: "Roboto";
 `;
 
-export const Linkmenu = styled.a`
+export const LinkMenu = styled.a`
   color: ${(props) => (props.ground ? "black" : "#fff !important")};
   background-color: ${(props) => (props.ground ? "#fff" : "#d7a274")};
   border: ${(props) => (props.ground ? "1px solid #808b98" : "none")};

@@ -30,20 +30,20 @@ import team3 from "../../../assets/img/team3.jpg";
 // }
 import React from "react";
 
-export function CarouselCard({ quote }) {
+export function CarouselCard(slides) {
   return (
     <S.CarouselCard>
       <S.fontquote>
         <FontAwesomeIcon icon={faQuoteLeft} />
       </S.fontquote>
-      <S.content>{quote.content}</S.content>
+      <div>{slides.content}</div>
       <S.authorMain>
         <div>
-          <S.testImg src={quote.imgSrc} alt="img" />
+          <S.testImg src={slides.link} alt="img" />
         </div>
         <div>
-          <S.TestimonialUser>{quote.authorName}</S.TestimonialUser>
-          <S.category>{quote.authorCredentials}</S.category>
+          <S.TestimonialUser>{slides.authorName}</S.TestimonialUser>
+          <S.category>{slides.authorCredentials}</S.category>
         </div>
       </S.authorMain>
     </S.CarouselCard>

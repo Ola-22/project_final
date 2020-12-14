@@ -27,7 +27,7 @@ export function LeftSide() {
         lacus nibh, aliquet vitae aliquet ut, elementum.
       </S.SktContent>
       <Link to="/Reservation">
-        <F.Linkmenu element>Book now!</F.Linkmenu>
+        <F.LinkMenu element>Book now!</F.LinkMenu>
       </Link>
     </>
   );

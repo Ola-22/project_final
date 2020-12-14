@@ -142,3 +142,15 @@ label{
 .check{
   margin-left: 27.5%;
 }
+
+/* .MuiIconButton-colorInherit {
+  color: inherit;
+  visibility: hidden;
+}
+@media (min-width: 160px) and (max-width: 600px) {
+  .MuiIconButton-colorInherit {
+    /* color: inherit; */
+    /* visibility: inherit; */
+  /* } */
+/* } */
+ 
